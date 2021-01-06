@@ -1,0 +1,12 @@
+@font-face {
+    font-family: glacial-indifference;
+    src: url(fonts/GlacialIndifference-Regular.otf);}
+
+body
+{
+  font-family: glacial-indifference;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
