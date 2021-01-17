@@ -1,12 +1,295 @@
+
+/*Create font and set entire page to this font*/
 @font-face {
     font-family: glacial-indifference;
     src: url(fonts/GlacialIndifference-Regular.otf);}
 
+/* Allows nav to scroll down to sections smoothly*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*All properties that apply to body*/
 body
 {
-  font-family: glacial-indifference;
+  padding-left: 1%;
+  padding-right: 1%;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+/* Creates grid divisions and styles header, footer and nav*/
+/*Responsive*/
+header {
+    grid-column: 1 / 3;
+    background: white;
+    margin-bottom:3%;
+    padding:0;
+
+}
+
+.headerPicDiv{
+  height:auto;
+  width:100%;
+  position:relative;
+}
+
+.headerPic{
+  width:100%;
+  height:800px;
+  object-fit:cover;
+}
+
+/*allows the header to have a picture over it and that picture
+(Subpic) is opaque, positioned absolutely, and centered*/
+
+@media only screen and (max-width: 600px) {
+  .headerSubpic{
+    width:365px;
+      opacity:0.90;
+      margin:0;
+      padding:0;
+      position: absolute;
+      top: 65%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+  }
+  }
+  @media only screen and (max-width: 375px) {
+    .headerSubpic{
+      width:340px;
+        opacity:0.90;
+        margin:0;
+        padding:0;
+        position: absolute;
+        top: 65%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+    }
+
+    @media only screen and (max-width: 320px) {
+      .headerSubpic{
+        width:310px;
+          opacity:0.90;
+          margin:0;
+          padding:0;
+          position: absolute;
+          top: 65%;
+          left: 0%;
+          transform: translate(-50%, -50%);
+      }
+      }
+
+  @media only screen and (min-width: 600px) {
+    .headerSubpic{
+      width:500px;
+      opacity:0.90;
+      margin:0;
+      padding:0;
+      position: absolute;
+      top: 70%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+    }
+    }
+
+.realFooter {
+  grid-column: 2 / 3;
+  background: #FFDE59;
+  padding: 5rem 1rem;
+}
+
+/* Sticky nav that has logo and page name*/
+.sticky-top-nav {
+  display:flex;
+  padding:1%;
+  align-items: center;
+}
+
+/* Fixed side nav bar*/
+nav {
+  white-space: nowrap;
+  background: white;
+}
+/*styles nav*/
+nav ul {
+  list-style: none;
+  margin-right:10px;
+  margin-left:10px;
+  padding: 5px;
+  background: #FFDE59;
+}
+/*styles links inside nav*/
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+/*active link*/
+nav ul li a.current {
+  background: white;
+  color:black;
+}
+
+/*Drops down when experiences in clicked*/
+.dropdown-item{
+  display:none;
+}
+.showExperiences{
+  display:block;
+}
+#experiences:hover{
+  cursor:pointer;
+}
+
+
+/* Only sticks nav to top if it fits in page*/
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+
+/*styles the round logo (icon) and name logo*/
+#icon{
+  float:left;
+  width:60px;
+}
+
+#logo{
+  display:block;
+  margin-right:0;
+  margin-left:auto;
+  width:180px;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo{
+      width:150px;
+    }
+
+    #icon{
+      float:left;
+      width:50px;
+    }
+  }
+@media only screen and (max-width: 375px) {
+  #logo{
+    margin-left: auto;
+    margin-right:0;
+    width:125px;
   }
 
-  html {
-    scroll-behavior: smooth;
+  #icon{
+    float:left;
+    width:35px;
   }
+}
+
+
+
+/*Enables user to read more on click*/
+.readMorePar{
+  display: none;
+}
+
+.showReadMore{
+  display:block;
+}
+
+/*Styles the Profile row holding image and intro, centers and spaces around*/
+.ProfileDiv-row{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+  margin:2%;
+
+}
+
+/*sets the width of the Profile pics*/
+#profilePics{
+  width:40%;
+}
+
+
+/*styles the intro box, gives it padding and makes it 45%*/
+#profileIntro{
+  width:50%;
+  padding:5%;
+  background-color:white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+  rgba(17, 17, 26, 0.1) 0px 16px 56px, hotpink 10px 10px 5px;
+}
+
+/*styles the "Hi I'm Marian" heading*/
+#hi_im_marian{
+  color:#00256F;
+  font-size:30px;
+  text-align: left;
+}
+
+/*does hot pink double underline under Marian Abuhazi*/
+.coolUnder{
+  -webkit-text-decoration: hotpink double underline;
+  text-decoration: hotpink double underline;
+font-family: 'Special Elite', cursive;
+}
+
+/*makes disclaimer blue and expands it to fix box*/
+#disclaimer{
+  color:grey;
+  text-align: left;
+  font-size:16px;
+}
+
+#readMorePar{
+  font-size:18px;
+  text-align: left;
+  color: #00256F;
+}
+
+#priyanka{
+padding:2%;
+text-align:center;
+color:#49618a;
+font-family: 'Special Elite', cursive;
+}
+
+#sign-off{
+  font-size: 23px;
+font-family: 'Special Elite', cursive;
+}
+
+.readMore{
+  border-radius:15px;
+
+}
+
+/*Sets the padding of all nav-linked sections to 5%*/
+section{
+  padding:5%;
+}
+
+
+
+h1{
+  margin:2%;
+}
+
+.ZonaGrillDiv-row{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+}
+
+.ZonaGrillDiv-col{
+  justify-content:space-around;
+  width:30%;
+
+}

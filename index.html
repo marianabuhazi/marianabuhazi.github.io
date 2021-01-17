@@ -12,7 +12,6 @@
 
     <link rel="icon" href="icons/logoBold.png" type="image" size="16x16"/>
 
-    <script src="script.js" defer></script>
     <!--BOOTSTRAP AND JQUERY-->
     <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -25,39 +24,294 @@
     <!--CSS Stylesheet link-->
     <link href="./css/style.css" rel="stylesheet" type="text/css"/>
 
-    <img src="icons/logoRegular.png" width="100px">
-    <img src="icons/mabuhaziLogo.png" width="100px">
-    <img src="pics/header.JPG" width="100px">
-    <img src="icons/interactiveResumeWhite.png" width="120px">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   </head>
+
+  <header>
+    <!--Logos and name for parallax-->
+  <div class="sticky-top-nav">
+        <img id="icon" src="icons/logoRegular.png" alt="Mabuhazi Icon">
+        <img id="logo" src="icons/mabuhaziLogo.png" alt="Mabuhazi Logo">
+</div>
+        <div class="headerPicDiv">
+          <img class="headerPic" alt="Marian Abuhazi Header" src="pics/header.JPG">
+          <img class="headerSubpic" src="icons/interactiveResumeWhite.png" alt="Marian Abuhazi Name">
+        </div>
+  </header>
+
+
 <body>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link" href="#Profile">Profile</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Education">Education</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Experiences">Experiences</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Skills">Skills</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Projects">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Blog">Blog</a>
-    </li>
-  </ul>
+<script src="./js/script.js" defer></script>
+
+  <nav>
+    <ul>
+      <li><a href="#Profile"><strong>Profile</strong></a></li>
+      <li><a href="#Education"><strong>Education</strong></a></li>
+      <li class="dropdown">
+          <a id="experiences" href="#Experiences"><strong>Experiences</strong></a>
+          <a class="dropdown-item" href="#Work"><strong>Work</strong></a>
+          <a class="dropdown-item" href="#Volunteer"><strong>Volunteer</strong></a>
+          <a class="dropdown-item" href="#Teaching"><strong>Teaching</strong></a>
+          <a class="dropdown-item" href="#Learning"><strong>Learning</strong></a>
+      </li>
+      <li><a href="#Skills"><strong>Skills</strong></a></li>
+      <li><a href="#Projects"><strong>Projects</strong></a></li>
+      <li><a href="#Blog"><strong>Blog</strong></a></li>
+    </ul>
+  </nav>
 
 
+  <main>
+    <section id="Profile" style="background-color: #EDF3FF;">
+      <img src="icons/profile.png" style="width:20%; display:block; margin-left:5%;">
+      <div class="ProfileDiv-row">
+        <div class="ProfileDiv-col" id="profileIntro">
+          <h5 id="hi_im_marian">Hi! I'm <span class="coolUnder">Marian Abuhazi</span>, aka Mabuhazi or "Rich Man"</h5>
+          <p id="disclaimer"><small><em>Disclaimer:</em> Absolutely no one calls me this except for myself and maybe one other person but I think it's kinda alpha and wish they did.</small></p>
+          <p id="readMorePar">I have trouble sleeping at night partly because I can't stop (over)thinking, but mostly because I'm inventing, solving, or rehearsing what I deem will be the "NEXT BIG THING!" I consider myself resolute, empowering, imaginative and a witty Rich Man.</p>
+        <div class="readMorePar" id="readMorePar">
+          <p>I was born and raised Mari&aacuten Sina&iacute Abuhazi Zambrano in Caracas, Venezuela, but somehow I lost a couple of names and tildes after migrating to the US in 2010. I am now plain ole Marian Abuhazi, a first-year Computer Science student
+            at Columbia University School of Engineering and Applied Science. Being the first in my family to attend college comes with a big weight and big dreams. Many dreams I am just starting to discover and others I am determined to achieve at the moment. I'm always down
+          for a challenge and don't fear much except for school shootings, being tricked into Scientology, and drowning. I have a variety of interests in STEM, the arts, and areas I can't quite categorize. I have acted, swam, figure skated, played the viola for 7 years,
+          coded, competed in history bowls, ran clubs, tutored and more. Talk about some range. New, challenging, fun? I'll do it.
 
-  <div class="container" background-color="yellow">
-    <a href="#Profile">Profile</a>
+          <blockquote class="blockquote" id="priyanka">
+            <p>"I consider myself an achiever. You tell me to paint the walls of this studio and I'll do the best damn paint job you've ever seen... Hard work is something I know I can damn well do." </p>
+            <footer class="blockquote-footer">Priyanka Chopra</footer>
+          </blockquote>
+          Growing up in a low-income immigrant household, and raised by a single mother, my whole life has been about seizing every opportunity and tackling financial challenges. It has been about using one's priviledge and power to make
+          a positive impact in other people's lives and that is something my family has been really successful at and it is a goal I set out to accomplish daily.
+          I am a dreamer, a hard worker and a people's person. I thrive off of any activity that involves engagement, collaboration, and chatting. Love to talk, make people laugh and help others become
+          the best version of themselves as I work on my own ambitions and strive to become someone my younger self would be proud of.
+
+          <br><br>- <span id="sign-off" class="coolUnder">Marian Abuhazi</span>
+        </p>
+      </div>
+      <button class="readMore">Read More About Me</button> <!--EDIT BUTTON WITH CSS AND JS--><!--read more/less-->
+      </div>
+      <div class="ProfileDiv-col" id="profilePics">
+          <img src="pics/marianSnow.jpg" style="width:80%; display:block; margin-left:auto; margin-right:auto;">
+          <br>
+          <img src="pics/marianSki.JPG" id="marianSki" style="width:80%; display:none; margin-left:auto; margin-right:auto;">
+      </div>
+    </div>
+    </section>
+    <section id="Education" style="background-color:lightgreen;">
+      <h1>Education</h1>
+        <blockquote class="blockquote">
+            <p>There is a difference between not knowing and not knowing yet.</p>
+            <footer class="blockquote-footer">Shelia Tobias</footer>
+          </blockquote>
+        <h4>Columbia University School of Engineering and Applied Science <br><small>B.S. in Computer Science | Expected: May 2024</small></h4>
+
+        <br>
+        <h4>Miami Beach Senior High School <br><small>Summa Cum Laude | IB Diploma Programme
+        June 2020 | GPA 5.3</small></h4>
+    </section>
+    <section id="Experiences">
+        <h1 id="Work">Experiences</h1>
+        <h2>Work</h2>
+        <h3>Zona Grill Food Truck</h3>
+      <div class="ZonaGrillDiv-row">
+        <div class="ZonaGrillDiv-col" id="Web Developer">
+          <h4>Web Developer</h4>
+          <p>Used HTML, CSS and Javascript to program a website for Zona Grill Food Truck in Miami, FL.
+            Made careful selections of the content, images and color scheme to create an original and
+            appealing site for Zona Grill to engage with clientele virtually and facilitate takeout ordering.
+            The site remains up-to-date with the workings of the company.
+          </p>
+          <img src="pics/zgSite.jpg" alt="Zona Grill Website Home Page" style="width:100%;">
+        </div>
+        <div class="ZonaGrillDiv-col" id="Social Media Coordinator">
+          <h4>Social Media Coordinator</h4>
+          <p>Responsible for developing original content and creative ideas to attract customers and promote
+            food options and services. Expected to increase customer engagement, stay up-to-date with social
+            media platforms, facilitate online conversations with clientele and respond to reviews or questions
+            from followers. Manager of all social media including: @zonagrill on Facebook, Instagram, Google My Business,
+            Yelp and more.
+          </p>
+          <img src="pics/zgInstagram.jpg" alt="Zona Grill Instagram Home Page" style="width:100%;">
+        </div>
+        <div class="ZonaGrillDiv-col" id="Cashier">
+          <h4>Cashier</h4>
+          <p>
+            Responsible for maintaining excellent customer service and cash register operations. Tasks include taking
+            clients' orders in person, answering calls for takeout and administering online ordering and delivery.
+            Delighted to promote services, ensure customer satisfaction, answer inquiries related to truck operation
+            and report to manager.
+          </p>
+          <img src="pics/marianTruck.jpg" alt="Marian Abuhazi at Zona Grill" style="width:100%;">
+          <img src="pics/blm.jpg" alt="Black Lives Matter Zona Grill" style="width:100%;">
+        </div>
+      </div>
+
+      <div class="ZonaGrillDiv-row">
+        <div class="translator-div">
+          <h3>English Asylum Documents Translator</h3>
+          <p> English-Spanish translator for Venezuelan asylum applicants' birth certificates, marriage documents,
+            personal statements and other legal papers. I have submitted my work to USCIS with a 100% guaranteed
+            acceptance. Working independently, I have helped many clients apply for asylum, residency and citizenship
+            in the United States. Many have successfully completed the process, giving me the satisfaction of having
+            assisted others in restarting and improving their lives in a new country.
+          </p>
+        </div>
+      </div>
+
+      <section id="Volunteer">
+    <div class="volunteerDiv-row">
+      <div class="mountSinai-div">
+        <h1>Volunteer</h1>
+        <h3>Mount Sinai Medical Center</h3>
+        <p> Volunteer at three hospital departments at Mount Sinai Medical Center since the summer of
+          2017. Served as a Patient Access Representative at General and Vascular Surgery, Supply Chain and most
+          recently, Human Resources office. I assisted and admitted patients at the main desk, answered phone calls,
+          ran errands and observed the work of surgeons. My most meaningful work was completed at HR, where I
+          completed the on-boarding process for new hires and helped walk-ins apply for jobs at the hospital.
+        </p>
+      </div>
+      <div class="volunteerQuote-div">
+        <blockquote class="blockquote">
+            <p>You inspire people who pretend to not even see you.</p>
+            <footer class="blockquote-footer">Unknown</footer>
+          </blockquote>
+      </div>
+    </div>
+        </section>
+
+    <section id="Teaching">
+      <h1>Teaching</h1>
+      <div class="teachingDiv-row">
+      <div class="teachingDiv-col">
+          <div class="gwc-div">
+            <h3>Girls Who Code @ Columbia Instructor</h3>
+            <p>Plan a weekly Web Development curriculum to teach girls in New York City high schools introductory HTML,
+              CSS and Javascript to obtain their certifications in those languages.</p>
+          </div>
+          <img src="pics/gwc.JPG" style="width:50%;">
+      </div>
+      <div class="teachingDiv-col">
+          <div class="tutoring-div">
+            <h3>Mathematics and Chemistry Tutor</h3>
+            <p>After-school tutor to three high school students. From Monday through Friday, helped students understand
+              the subjects of Geometry, Calculus I and AP Chemistry, served as a source of encouragement in their studies
+               and offered guidance in test-preparation, course selection and college admission strategies.
+              </p>
+              <img src="pics/tutor.png" style="width:50%;">
+              <img src="pics/anto.JPG" style="width:50%;">
+
+          </div>
+          <div class="teachingDiv-col">
+              <div class="tutoring-div">
+                <h3>Principal Viola, Guest Performer and Mentor</h3>
+                <p>I was recruited to my school's string orchestra in 2013 as a viola player.
+                  Through hard work and dedication to the program, I earned the title of first-chair viola
+                   and vice-president of the club for 4 consecutive years. I served as a mentor to 10 other
+                   students and helped them improve their intonation, and performing skills. Then, I became
+                   involved with the New World Symphony's MusicLab program, where I was mentored by world-renowned
+                   musicians and performed at the prestigious New World Symphony Center in Miami Beach, Florida
+                   5 times. Had the great honor of attending a master class taught by Yo-Yo Ma at the New World
+                   Symphony Center in 2018.
+                  </p>
+                  <img src="pics/orchestra.jpeg" style="width:100%;">
+              </div>
+      </div>
+    </div>
+        </section>
+
+    <section id="Learning">
+          <h1>Learning</h1>
+          <div class="learningDiv-row">
+          <div class="learningDiv-col">
+              <div class="gwc-div">
+                <h3>Kode With Klossy</h3>
+                <p>Refined my web development skills by studying 2 weeks of HTML, CSS and Javascript at Kode With Klossy.
+                  This camp founded by supermodel and entrepreneur Karlie Kloss, teaches girls ages 13-18 to code.
+                  My plan is to give back to future KWK scholars in the summer of 2021 by becoming an Instructor Assistant
+                  and introducing more girls to computer science careers and skills.</p>
+              </div>
+          </div>
+          <div class="learningDiv-col">
+              <div class="sip-div">
+                <h3>GWC Summer Immersion Program</h3>
+                <p>Girls Who Code Summer Immersion is a summer program offered to high school girls entering their
+                  junior and senior year. For 7 weeks, from June to August 2018, I learned various programming
+                  languages including HTML, CSS, Javascript, Json, Arduino C, and Python. During my time with GWC,
+                  I networked with female entrepreneurs and professors in the technology industry, built a website using
+                  HTML, CSS and Javascript called Moodivate.me, pitched this site, and was introduced to the world of
+                  computer science, robotics, video games, and web development.
+                  </p>
+                  <img src="pics/gwc.JPG" style="width:50%;">
+
+              </div>
+              <div class="teachingDiv-col">
+                  <div class="tutoring-div">
+                    <h3>University of Miami Summer Scholars</h3>
+                    <p>Studied Neuroscience and Public Health through intensive 3-week courses at the University of Miami.
+                      Obtained a CPR certification, networked with students, professors, and professionals, and explored the college experience
+                      as a junior in high school.
+                      </p>
+                      <img src="pics/UM.JPG" style="width:40%;">
+                  </div>
+          </div>
+        </div>
+            </section>
+    </section>
+
+    <section id="Skills">
+      <h1>Skills and Character</h1>
+    <div class="skillDiv-row">
+      <div class="skillDiv-col">
+        <h2>Skills</h2>
+          <ul>
+            <li>Fluent in Spanish and English</li>
+            <li>Proficient in HTML, CSS, JavaScript and Java</li>
+            <li>Experienced in AutoCAD Architecture, Arduino C and SAP2000</li>
+            <li>BLS Certified until July 2021</li>
+            <li>Experience working in customer service and human resources</li>
+          </ul>
+        </div>
+        <div class="skillDiv-col">
+          <h2>Character</h2>
+            <p>I like to think I'm funny, adventurous, a risk-taker and intellectually curious.
+              But are any of these true? I can only validate so much of this information.</p>
+          </div>
+          <img src="pics/funny.JPG" style="width:30%;">
+          <img src="pics/adventure.JPG" style="width:30%;">
+      </div>
+    </section>
+    <section id="Projects">
+      <h1>Projects</h1>
+    <div class="projectsDiv-row">
+    <div class="projectsDiv-col">
+      <h2>Goalpost</h2>
+      <img src="pics/goalpost.png" style="width:100px;">
+      <p>More on this soon!</p>
+    </div>
+    <div class="projectsDiv-col">
+      <h2>Zona Grill</h2>
+      <a href="http://zonagrill.us/">
+        <img src="pics/zgLogo.png" style="width:100px;">
+      </a>
+    </div>
+    </div>
+    </section>
+
+    <section id="Blog">
+    <div class="blogDiv-row">
+      <div class="blogDiv-col">
+        <h1>Blog</h1>
+        <h4>I once had a blog where I reviewed protein bars and <em>limited edition</em> Honey Bunches of Oats cereal.</h4>
+        <p>Clearly, I thought I was cool, so I am bringing that back! Except this time, it's just me talking about anything I find exciting and no longer Honey Bunches.</p>
+      <button>Blog</button>
+    </div>
   </div>
+    </section>
+</main>
 </body>
+
+<footer class="realFooter">
+  <p>&copy;2021 Marian "Mom, I am a rich man" Abuhazi</p>
+</footer>
 
 </html>
