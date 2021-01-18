@@ -94,6 +94,7 @@ header {
     }
     }
 
+
 .realFooter {
   grid-column: 2 / 3;
   background: #FFDE59;
@@ -161,8 +162,8 @@ nav ul li a.current {
 }
 
 #logo{
-  display:block;
-  margin-right:0;
+  display:inline;
+  margin-right:auto;
   margin-left:auto;
   width:180px;
 }
@@ -179,8 +180,6 @@ nav ul li a.current {
   }
 @media only screen and (max-width: 375px) {
   #logo{
-    margin-left: auto;
-    margin-right:0;
     width:125px;
   }
 
@@ -197,8 +196,14 @@ nav ul li a.current {
   display: none;
 }
 
-.showReadMore{
+.showStyleReadMore{
   display:block;
+  width:100%;
+  padding:5%;
+  background-color:white;
+  font-size:18px;
+  text-align: left;
+  color: #00256F;
 }
 
 /*Styles the Profile row holding image and intro, centers and spaces around*/
@@ -217,12 +222,26 @@ nav ul li a.current {
   width:40%;
 }
 
+#marianSnow{
+  width:80%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0 30px 30px 0 rgba(0,0,0,0.01),0 5px 15px 0 rgba(0,0,0,0.4);
+}
+
+.section-title{
+  display:block;
+  margin-left:5%;
+}
+
 
 /*styles the intro box, gives it padding and makes it 45%*/
 #profileIntro{
   width:50%;
   padding:5%;
   background-color:white;
+  color: #00256F;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
   rgba(17, 17, 26, 0.1) 0px 16px 56px, hotpink 10px 10px 5px;
 }
@@ -238,7 +257,7 @@ nav ul li a.current {
 .coolUnder{
   -webkit-text-decoration: hotpink double underline;
   text-decoration: hotpink double underline;
-font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite', cursive;
 }
 
 /*makes disclaimer blue and expands it to fix box*/
@@ -248,27 +267,74 @@ font-family: 'Special Elite', cursive;
   font-size:16px;
 }
 
-#readMorePar{
-  font-size:18px;
-  text-align: left;
-  color: #00256F;
-}
-
-#priyanka{
-padding:2%;
-text-align:center;
-color:#49618a;
-font-family: 'Special Elite', cursive;
+.blockquote{
+  display:block;
+  margin-left: 20%;
+  margin-right:20%;
+  margin-top:2%;
+  margin-bottom:2%;
+  color:#49618a;
+  font-family: 'Special Elite', cursive;
+  text-align: justify;
 }
 
 #sign-off{
   font-size: 23px;
-font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite', cursive;
+}
+
+
+#readMore{
+  display:block;
 }
 
 .readMore{
-  border-radius:15px;
+  display:block;
+  text-align:center;
+  padding:2%;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0 30px 30px 0 rgba(0,0,0,0.01),
+  0 5px 15px 0 rgba(0,0,0,0.4);
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  border: 0 solid #FFDE59;
+  transition: border 400ms ease-in-out, padding 400ms ease-in-out;
 
+}
+
+.readMore:hover {
+  padding: 0.6rem;
+  border: 0.4rem solid #FFDE59;
+}
+
+.arrow-animation {
+  border: solid #FFDE59;
+  border-width: 0 7px 7px 0;
+  display: none;
+  float: right;
+  padding: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation: change-color 2s infinite;
+
+}
+
+@keyframes change-color {
+  0%   {border: solid #00256F; border-width: 0 7px 7px 0; padding: 20px; }
+  25%  {border: solid hotpink; border-width: 0 7px 7px 0; padding: 20px;}
+  50%  {border: solid #FFDE59; border-width: 0 9px 9px 0; padding: 22px;}
+  100%  {border: solid hotpink; border-width: 0 7px 7px 0; padding: 20px;}
+}
+
+.Education-row{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  margin:4%;
+  background-color: white;
+  padding:5%;
 }
 
 /*Sets the padding of all nav-linked sections to 5%*/
@@ -282,14 +348,79 @@ h1{
   margin:2%;
 }
 
-.ZonaGrillDiv-row{
+.Experiences-row{
+  margin:4%;
+  background-color: white;
+  padding:2%
+
+}
+
+.Work-row{
   display:flex;
+  flex-direction:column;
   flex-wrap:wrap;
-  flex-direction:row;
+  align-items:flex-start;
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+.ZonaGrillDiv-row, .mountSinai-div, .teachingDiv-row, .learningDiv-row, .skillDiv-row, .blogDiv-row{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-left:5%;
+  padding-right:5%;
+  background-color:white;
+  margin:4%;
 }
 
 .ZonaGrillDiv-col{
-  justify-content:space-around;
-  width:30%;
+  width:100%;
 
+}
+
+.roleBtn{
+  display:block;
+  text-align:center;
+  padding:2%;
+  box-shadow: 0 30px 30px 0 rgba(0,0,0,0.01),
+  0 5px 15px 0 rgba(0,0,0,0.4);
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  border: 0 solid hotpink;
+  transition: border 400ms ease-in-out, padding 400ms ease-in-out;
+  float:left;
+  margin-bottom:5%;
+  margin-top:1%;
+}
+
+.roleBtn:hover {
+  padding: 0.6rem;
+  border: 0.4rem solid hotpink;
+}
+
+.teachingDiv-col{
+  padding-top:2%
+}
+
+.projectsDiv-row{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-left:5%;
+  padding-right:5%;
+  background-color:white;
+  margin:4%;
+}
+
+.projectsDiv-col{
+  width:40%;
 }

@@ -64,56 +64,66 @@
 
   <main>
     <section id="Profile" style="background-color: #EDF3FF;">
-      <img src="icons/profile.png" style="width:20%; display:block; margin-left:5%;">
+      <img src="icons/profile.png" class= "section-title" style="width:20%;">
       <div class="ProfileDiv-row">
         <div class="ProfileDiv-col" id="profileIntro">
           <h5 id="hi_im_marian">Hi! I'm <span class="coolUnder">Marian Abuhazi</span>, aka Mabuhazi or "Rich Man"</h5>
           <p id="disclaimer"><small><em>Disclaimer:</em> Absolutely no one calls me this except for myself and maybe one other person but I think it's kinda alpha and wish they did.</small></p>
           <p id="readMorePar">I have trouble sleeping at night partly because I can't stop (over)thinking, but mostly because I'm inventing, solving, or rehearsing what I deem will be the "NEXT BIG THING!" I consider myself resolute, empowering, imaginative and a witty Rich Man.</p>
-        <div class="readMorePar" id="readMorePar">
-          <p>I was born and raised Mari&aacuten Sina&iacute Abuhazi Zambrano in Caracas, Venezuela, but somehow I lost a couple of names and tildes after migrating to the US in 2010. I am now plain ole Marian Abuhazi, a first-year Computer Science student
-            at Columbia University School of Engineering and Applied Science. Being the first in my family to attend college comes with a big weight and big dreams. Many dreams I am just starting to discover and others I am determined to achieve at the moment. I'm always down
-          for a challenge and don't fear much except for school shootings, being tricked into Scientology, and drowning. I have a variety of interests in STEM, the arts, and areas I can't quite categorize. I have acted, swam, figure skated, played the viola for 7 years,
-          coded, competed in history bowls, ran clubs, tutored and more. Talk about some range. New, challenging, fun? I'll do it.
-
-          <blockquote class="blockquote" id="priyanka">
-            <p>"I consider myself an achiever. You tell me to paint the walls of this studio and I'll do the best damn paint job you've ever seen... Hard work is something I know I can damn well do." </p>
-            <footer class="blockquote-footer">Priyanka Chopra</footer>
-          </blockquote>
-          Growing up in a low-income immigrant household, and raised by a single mother, my whole life has been about seizing every opportunity and tackling financial challenges. It has been about using one's priviledge and power to make
-          a positive impact in other people's lives and that is something my family has been really successful at and it is a goal I set out to accomplish daily.
-          I am a dreamer, a hard worker and a people's person. I thrive off of any activity that involves engagement, collaboration, and chatting. Love to talk, make people laugh and help others become
-          the best version of themselves as I work on my own ambitions and strive to become someone my younger self would be proud of.
-
-          <br><br>- <span id="sign-off" class="coolUnder">Marian Abuhazi</span>
-        </p>
+      <button class="readMore" id="readMore">Read More About Me</button> <!--EDIT BUTTON WITH CSS AND JS--><!--read more/less-->
+      <div class="arrow-animation">
       </div>
-      <button class="readMore">Read More About Me</button> <!--EDIT BUTTON WITH CSS AND JS--><!--read more/less-->
       </div>
+
       <div class="ProfileDiv-col" id="profilePics">
-          <img src="pics/marianSnow.jpg" style="width:80%; display:block; margin-left:auto; margin-right:auto;">
-          <br>
-          <img src="pics/marianSki.JPG" id="marianSki" style="width:80%; display:none; margin-left:auto; margin-right:auto;">
+          <img id="marianSnow" src="pics/marianSnow.jpg">
       </div>
     </div>
+    <div class="readMorePar" id="readMorePar">
+      <p>I was born and raised Mari&aacuten Sina&iacute Abuhazi Zambrano in Caracas, Venezuela, but somehow I lost a couple of names and tildes after migrating to the US in 2010. I am now plain ole Marian Abuhazi, a first-year Computer Science student
+        at Columbia University School of Engineering and Applied Science. Being the first in my family to attend college comes with a big weight and big dreams. Many dreams I am just starting to discover and others I am determined to achieve at the moment. I'm always down
+      for a challenge and don't fear much except for school shootings, being tricked into Scientology, and drowning. I have a variety of interests in STEM, the arts, and areas I can't quite categorize. I have acted, swam, figure skated, played the viola for 7 years,
+      coded, competed in history bowls, ran clubs, tutored and more. Talk about some range. New, challenging, fun? I'll do it.
+
+      <blockquote class="blockquote">
+        <p>"I consider myself an achiever. You tell me to paint the walls of this studio and I'll do the best damn paint job you've ever seen... Hard work is something I know I can damn well do." </p>
+        <footer class="blockquote-footer">Priyanka Chopra</footer>
+      </blockquote>
+      Growing up in a low-income immigrant household, and raised by a single mother, my whole life has been about seizing every opportunity and tackling financial challenges. It has been about using one's priviledge and power to make
+      a positive impact in other people's lives and that is something my family has been really successful at and it is a goal I set out to accomplish daily.
+      I am a dreamer, a hard worker and a people's person. I thrive off of any activity that involves engagement, collaboration, and chatting. Love to talk, make people laugh and help others become
+      the best version of themselves as I work on my own ambitions and strive to become someone my younger self would be proud of.
+      <br><br>- <span id="sign-off" class="coolUnder">Marian Abuhazi</span>
+      <button class="readMore" id="readLess">Read Less</button>
+    </p>
+  </div>
     </section>
-    <section id="Education" style="background-color:lightgreen;">
-      <h1>Education</h1>
+<br>
+    <section id="Education" style="background-color:#EDF3FF;">
+      <img src="icons/Education.png" class= "section-title" style="width:30%;">
+      <div class="Education-row">
+        <img src="pics/seas.jpg" style="width:5%; display:block;">
+          <h4 style="margin:1%;">Columbia University School of Engineering and Applied Science <br><small>B.S. in Computer Science | Expected: May 2024 | GPA: 3.9/4.0</small></h4>
+        <br>
+        <img src="pics/mbsh.jpg" style="width:5%; display:block;">
+        <h4 style="margin:1%;">Miami Beach Senior High School <br><small>Summa Cum Laude | IB Diploma Programme
+        June 2020 | GPA 5.3</small></h4>
+        <br>
         <blockquote class="blockquote">
             <p>There is a difference between not knowing and not knowing yet.</p>
             <footer class="blockquote-footer">Shelia Tobias</footer>
           </blockquote>
-        <h4>Columbia University School of Engineering and Applied Science <br><small>B.S. in Computer Science | Expected: May 2024</small></h4>
-
-        <br>
-        <h4>Miami Beach Senior High School <br><small>Summa Cum Laude | IB Diploma Programme
-        June 2020 | GPA 5.3</small></h4>
+    </div>
     </section>
-    <section id="Experiences">
-        <h1 id="Work">Experiences</h1>
-        <h2>Work</h2>
-        <h3>Zona Grill Food Truck</h3>
+
+    <br>
+    <section id="Experiences" style="background-color:#EDF3FF;">
+      <img src="icons/experiences.png" class= "section-title" style="width:35%;">
+    <div class="Experiences-row">
+      <div class="Work-row" id="Work">
+        <h1 style="padding-left:0">Work</h1>
       <div class="ZonaGrillDiv-row">
+        <h3>Zona Grill Food Truck</h3>
         <div class="ZonaGrillDiv-col" id="Web Developer">
           <h4>Web Developer</h4>
           <p>Used HTML, CSS and Javascript to program a website for Zona Grill Food Truck in Miami, FL.
@@ -121,7 +131,8 @@
             appealing site for Zona Grill to engage with clientele virtually and facilitate takeout ordering.
             The site remains up-to-date with the workings of the company.
           </p>
-          <img src="pics/zgSite.jpg" alt="Zona Grill Website Home Page" style="width:100%;">
+          <img src="pics/zgSite.jpg" id="showRole-img-1" alt="Zona Grill Website Home Page" style="width:30%; display:none;">
+          <button class="roleBtn" id="zgrole1">More about this role</button>
         </div>
         <div class="ZonaGrillDiv-col" id="Social Media Coordinator">
           <h4>Social Media Coordinator</h4>
@@ -131,7 +142,8 @@
             from followers. Manager of all social media including: @zonagrill on Facebook, Instagram, Google My Business,
             Yelp and more.
           </p>
-          <img src="pics/zgInstagram.jpg" alt="Zona Grill Instagram Home Page" style="width:100%;">
+          <img src="pics/zgInstagram.jpg" id="showRole-img-2" alt="Zona Grill Instagram Home Page" style="width:30%; display:none;">
+          <button class="roleBtn" id="zgrole2">More about this role</button>
         </div>
         <div class="ZonaGrillDiv-col" id="Cashier">
           <h4>Cashier</h4>
@@ -141,8 +153,11 @@
             Delighted to promote services, ensure customer satisfaction, answer inquiries related to truck operation
             and report to manager.
           </p>
-          <img src="pics/marianTruck.jpg" alt="Marian Abuhazi at Zona Grill" style="width:100%;">
-          <img src="pics/blm.jpg" alt="Black Lives Matter Zona Grill" style="width:100%;">
+          <div id="showRole-img-3" style="display:none;">
+          <img src="pics/marianTruck.jpg" alt="Marian Abuhazi at Zona Grill" style="width:40%;">
+          <img src="pics/blm.jpg" alt="Black Lives Matter Zona Grill" style="width:40%;">
+        </div>
+          <button class="roleBtn" id="zgrole3">More about this role</button>
         </div>
       </div>
 
@@ -157,11 +172,12 @@
           </p>
         </div>
       </div>
+    </div>
 
-      <section id="Volunteer">
+    <section id="Volunteer">
+      <h1 style="margin-left:0; padding:0;">Volunteer</h1>
     <div class="volunteerDiv-row">
       <div class="mountSinai-div">
-        <h1>Volunteer</h1>
         <h3>Mount Sinai Medical Center</h3>
         <p> Volunteer at three hospital departments at Mount Sinai Medical Center since the summer of
           2017. Served as a Patient Access Representative at General and Vascular Surgery, Supply Chain and most
@@ -177,18 +193,18 @@
           </blockquote>
       </div>
     </div>
-        </section>
+    </section>
 
     <section id="Teaching">
-      <h1>Teaching</h1>
+      <h1 style="margin-left:0; padding:0;">Teaching</h1>
       <div class="teachingDiv-row">
       <div class="teachingDiv-col">
           <div class="gwc-div">
             <h3>Girls Who Code @ Columbia Instructor</h3>
-            <p>Plan a weekly Web Development curriculum to teach girls in New York City high schools introductory HTML,
-              CSS and Javascript to obtain their certifications in those languages.</p>
+            <p>Plan weekly Web Dev curriculum to teach girls in NYC high schools introductory HTML, CSS and Javascript to prepare
+               them for a Girls Who Code certification in those languages. Create and inclusive community for learning programming
+                and empower girls to make a difference with technology.</p>
           </div>
-          <img src="pics/gwc.JPG" style="width:50%;">
       </div>
       <div class="teachingDiv-col">
           <div class="tutoring-div">
@@ -198,7 +214,6 @@
                and offered guidance in test-preparation, course selection and college admission strategies.
               </p>
               <img src="pics/tutor.png" style="width:50%;">
-              <img src="pics/anto.JPG" style="width:50%;">
 
           </div>
           <div class="teachingDiv-col">
@@ -213,7 +228,7 @@
                    5 times. Had the great honor of attending a master class taught by Yo-Yo Ma at the New World
                    Symphony Center in 2018.
                   </p>
-                  <img src="pics/orchestra.jpeg" style="width:100%;">
+                  <img src="pics/orchestra.jpeg" style="width:50%;">
               </div>
       </div>
     </div>
@@ -251,15 +266,18 @@
                       Obtained a CPR certification, networked with students, professors, and professionals, and explored the college experience
                       as a junior in high school.
                       </p>
-                      <img src="pics/UM.JPG" style="width:40%;">
                   </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
             </section>
     </section>
+    <br>
 
-    <section id="Skills">
-      <h1>Skills and Character</h1>
+    <section id="Skills" style="background-color:#EDF3FF;">
+      <img src="icons/skills.png" class= "section-title" style="width:18%; margin-bottom:2%;">
     <div class="skillDiv-row">
       <div class="skillDiv-col">
         <h2>Skills</h2>
@@ -276,34 +294,39 @@
             <p>I like to think I'm funny, adventurous, a risk-taker and intellectually curious.
               But are any of these true? I can only validate so much of this information.</p>
           </div>
-          <img src="pics/funny.JPG" style="width:30%;">
-          <img src="pics/adventure.JPG" style="width:30%;">
+        <div class="skills-imgs" style="display:flex; justify-content:space-around;">
+          <img src="pics/funny.JPG" style="width:20.5%;">
+          <img src="pics/adventure.JPG" style="width:27%;">
+        </div>
       </div>
     </section>
-    <section id="Projects">
+
+    <br>
+    <section id="Projects" style="background-color:#EDF3FF;">
       <h1>Projects</h1>
     <div class="projectsDiv-row">
     <div class="projectsDiv-col">
       <h2>Goalpost</h2>
-      <img src="pics/goalpost.png" style="width:100px;">
+      <img src="pics/goalpost.png" style="width:100%;">
       <p>More on this soon!</p>
     </div>
     <div class="projectsDiv-col">
       <h2>Zona Grill</h2>
       <a href="http://zonagrill.us/">
-        <img src="pics/zgLogo.png" style="width:100px;">
+        <img src="pics/zgLogo.png" style="width:100%;">
       </a>
     </div>
     </div>
     </section>
 
-    <section id="Blog">
+    <br>
+    <section id="Blog" style="background-color:#EDF3FF;">
+      <h1>Blog</h1>
     <div class="blogDiv-row">
       <div class="blogDiv-col">
-        <h1>Blog</h1>
         <h4>I once had a blog where I reviewed protein bars and <em>limited edition</em> Honey Bunches of Oats cereal.</h4>
         <p>Clearly, I thought I was cool, so I am bringing that back! Except this time, it's just me talking about anything I find exciting and no longer Honey Bunches.</p>
-      <button>Blog</button>
+      <button class="readMore" style="width:15%; border-color:#00256F;">Blog</button>
     </div>
   </div>
     </section>
