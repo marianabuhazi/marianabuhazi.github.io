@@ -3,8 +3,7 @@ alert("Hello! I have only been working on this site for a couple of days, and it
 $( document ).ready(function() {
     console.log( "Doc ready!" );
 
-$(".headerPic").on('load', function() {
-    console.log('Header Pic loaded');
+
 //Animates subpic "Marian Abuhazi Interactive..." to be centered based on different screen sizes
 var less600 = window.matchMedia("(max-width: 600px)");
 var more600=window.matchMedia("(min-width: 600px)");
@@ -39,7 +38,6 @@ function changeAnimate() {
       }
    }
 
-})
 
 //Fixes nav to the top and allows it to scroll to different parts of page
   let mainNavLinks = document.querySelectorAll("nav ul li a");
@@ -66,16 +64,18 @@ function changeAnimate() {
     });
   });
 
-//Function that when Experiences button is clicked, it shows dropdown
-var experiencesBtn= $("#experiences");
-var dropdownItems=$(".dropdown-item");
+//Function that when Experiences button is clicked, it shows dropdown. commented out for now, because failing
+// var experiencesBtn= $("#experiences");
+// var dropdownItems=$(".dropdown-item");
+//
+// experiencesBtn.on("click", showDropdown);
+//
+// function showDropdown(){
+//   dropdownItems.toggleClass("showExperiences");
+//   console.log("Experiences Button clicked!");
+// }
 
-experiencesBtn.on("click", showDropdown);
 
-function showDropdown(){
-  dropdownItems.toggleClass("showExperiences");
-  console.log("Experiences Button clicked!");
-}
 
 //Function that when Read More button is clicked, it expands div
 var readMoreBtn= $("#readMore");
