@@ -109,13 +109,13 @@ header {
 /* Fixed side nav bar*/
 nav {
   white-space: nowrap;
-  background: white;
+  background: #ffe475;
 }
 /*styles nav*/
 nav ul {
   list-style: none;
   padding: 1px;
-  background: white;
+  background: #ffe475;
 }
 /*styles links inside nav*/
 nav ul li a {
