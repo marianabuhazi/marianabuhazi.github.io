@@ -39,31 +39,6 @@ function changeAnimate() {
    }
 
 
-//Fixes nav to the top and allows it to scroll to different parts of page
-  let mainNavLinks = document.querySelectorAll("nav ul li a");
-  let mainSections = document.querySelectorAll("main section");
-
-  let lastId;
-  let cur = [];
-
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach(link => {
-      let section = document.querySelector(link.hash);
-
-      if (
-        section.offsetTop <= fromTop &&
-        section.offsetTop + section.offsetHeight > fromTop
-      ) {
-        link.classList.add("current");
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
 //Function that when Experiences button is clicked, it shows dropdown. commented out for now, because failing
 // var experiencesBtn= $("#experiences");
 // var dropdownItems=$(".dropdown-item");
@@ -162,3 +137,29 @@ zgbtn2.on("click", showMoreRole2);
 zgbtn3.on("click", showMoreRole3);
 
 });
+
+
+//Fixes nav to the top and allows it to scroll to different parts of page
+  let mainNavLinks = document.querySelectorAll("nav ul li a");
+  let mainSections = document.querySelectorAll("main section");
+
+  let lastId;
+  let cur = [];
+
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add("current");
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
