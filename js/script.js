@@ -1,5 +1,4 @@
 //Checks that doc is loaded
-//alert("Hello! I have only been working on this site for a couple of days, and it is still under construction! For now, have fun getting to know me :)");
 $( document ).ready(function() {
 
 
