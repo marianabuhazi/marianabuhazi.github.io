@@ -1,7 +1,6 @@
 //Checks that doc is loaded
-alert("Hello! I have only been working on this site for a couple of days, and it is still under construction! For now, have fun getting to know me :)");
+//alert("Hello! I have only been working on this site for a couple of days, and it is still under construction! For now, have fun getting to know me :)");
 $( document ).ready(function() {
-    console.log( "Doc ready!" );
 
 
 //Animates subpic "Marian Abuhazi Interactive..." to be centered based on different screen sizes
@@ -13,7 +12,6 @@ changeAnimate(more600);
 
 function changeAnimate() {
       if (less600.matches) {
-        console.log("media query works for < 600px!");
         $(".headerSubpic").animate({
           opacity:'0.90',
           margin:'0',
@@ -25,7 +23,6 @@ function changeAnimate() {
         }, 850);
       }
       if (more600.matches) {
-        console.log("media query works for > 600px!");
         $(".headerSubpic").animate({
           opacity:'0.90',
           margin:'0',

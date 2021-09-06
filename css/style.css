@@ -1,130 +1,128 @@
-
 /*Create font and set entire page to this font*/
 @font-face {
-    font-family: glacial-indifference;
-    src: url(fonts/GlacialIndifference-Regular.otf);}
+	font-family: glacial-indifference;
+	src: url(fonts/GlacialIndifference-Regular.otf);
+}
 
 /* Allows nav to scroll down to sections smoothly*/
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /*All properties that apply to body*/
-body
-{
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  color: #00256F;
+body {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	color: #00256f;
 }
 
 /* Creates grid divisions and styles header, footer and nav*/
 /*Responsive*/
 header {
-    grid-column: 1 / 3;
-    background: white;
-    margin-bottom:3%;
-    padding:0;
-
+	grid-column: 1 / 3;
+	background: white;
+	margin-bottom: 3%;
+	padding: 0;
 }
 
-.headerPicDiv{
-  height:auto;
-  width:100%;
-  position:relative;
+.headerPicDiv {
+	height: auto;
+	width: 100%;
+	position: relative;
 }
 
-.headerPic{
-  width:100%;
-  height:800px;
-  object-fit:cover;
+.headerPic {
+	width: 100%;
+	height: 800px;
+	object-fit: cover;
 }
 
 /*allows the header to have a picture over it and that picture
 (Subpic) is opaque, positioned absolutely, and centered*/
 
 @media only screen and (max-width: 600px) {
-  .headerSubpic{
-    width:365px;
-      opacity:0.90;
-      margin:0;
-      padding:0;
-      position: absolute;
-      top: 65%;
-      left: 0%;
-      transform: translate(-50%, -50%);
-  }
-  }
-  @media only screen and (max-width: 375px) {
-    .headerSubpic{
-      width:340px;
-        opacity:0.90;
-        margin:0;
-        padding:0;
-        position: absolute;
-        top: 65%;
-        left: 0%;
-        transform: translate(-50%, -50%);
-    }
-    }
+	.headerSubpic {
+		width: 365px;
+		opacity: 0.9;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 65%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+	}
+}
+@media only screen and (max-width: 375px) {
+	.headerSubpic {
+		width: 340px;
+		opacity: 0.9;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 65%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+	}
+}
 
-    @media only screen and (max-width: 320px) {
-      .headerSubpic{
-        width:310px;
-          opacity:0.90;
-          margin:0;
-          padding:0;
-          position: absolute;
-          top: 65%;
-          left: 0%;
-          transform: translate(-50%, -50%);
-      }
-      }
+@media only screen and (max-width: 320px) {
+	.headerSubpic {
+		width: 310px;
+		opacity: 0.9;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 65%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+	}
+}
 
-  @media only screen and (min-width: 600px) {
-    .headerSubpic{
-      width:500px;
-      opacity:0.90;
-      margin:0;
-      padding:0;
-      position: absolute;
-      top: 70%;
-      left: 0%;
-      transform: translate(-50%, -50%);
-    }
-    }
+@media only screen and (min-width: 600px) {
+	.headerSubpic {
+		width: 500px;
+		opacity: 0.9;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 70%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+	}
+}
 
-  /* Sticky nav that has logo and page name*/
+/* Sticky nav that has logo and page name*/
 .sticky-top-nav {
-      display:flex;
-      padding:1%;
-      align-items: center;
-    }
+	display: flex;
+	padding: 1%;
+	align-items: center;
+}
 
 .realFooter {
-  grid-column: 1 / 3;
-  background: white;
-  padding: 5rem 1rem;
+	grid-column: 1 / 3;
+	background: white;
+	padding: 5rem 1rem;
 }
 
 /* Fixed side nav bar*/
 nav {
-  white-space: nowrap;
-  background: #ffe475;
+	white-space: nowrap;
+	background: #ffe475;
 }
 /*styles nav*/
 nav ul {
-  list-style: none;
-  padding: 1px;
-  background: #ffe475;
+	list-style: none;
+	padding: 1px;
+	background: #ffe475;
 }
 /*styles links inside nav*/
 nav ul li a {
-  display: block;
-  padding: 3rem 0.5rem;
-  color: #00256F;
-  text-decoration: none;
-  text-align: center;
-  font-size:18px;
+	display: block;
+	padding: 3rem 0.5rem;
+	color: #00256f;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
 }
 /*active link NOT WORKING YET
 nav ul li a.current {
@@ -132,16 +130,16 @@ nav ul li a.current {
 }
 */
 
-nav ul li a:hover{
-  text-decoration: none;
-  color:hotpink;
+nav ul li a:hover {
+	text-decoration: none;
+	color: hotpink;
 }
 
 @media only screen and (max-width: 600px) {
-  nav ul li a{
-    padding: 3rem 0.2rem;
-    font-size:12px;
-  }
+	nav ul li a {
+		padding: 3rem 0.2rem;
+		font-size: 12px;
+	}
 }
 
 /*Drops down when experiences in clicked
@@ -167,350 +165,358 @@ failing a little so commenting out for now
 
 /* Only sticks nav to top if it fits in page*/
 @media (min-height: 300px) {
-  nav ul {
-    position: sticky;
-    top: 0;
-  }
+	nav ul {
+		position: sticky;
+		top: 0;
+	}
 }
 
 /*styles the round logo (icon) and name logo*/
-#icon{
-  float:left;
-  width:60px;
+#icon {
+	float: left;
+	width: 60px;
 }
 
-#logo{
-  display:inline;
-  margin-right:auto;
-  margin-left:auto;
-  width:180px;
+#logo {
+	display: inline;
+	margin-right: auto;
+	margin-left: auto;
+	width: 180px;
 }
 
 @media only screen and (max-width: 600px) {
-    #logo{
-      width:150px;
-    }
+	#logo {
+		width: 150px;
+	}
 
-    #icon{
-      float:left;
-      width:50px;
-    }
-  }
-@media only screen and (max-width: 375px) {
-  #logo{
-    width:125px;
-  }
-
-  #icon{
-    float:left;
-    width:35px;
-  }
+	#icon {
+		float: left;
+		width: 50px;
+	}
 }
+@media only screen and (max-width: 375px) {
+	#logo {
+		width: 125px;
+	}
 
-
+	#icon {
+		float: left;
+		width: 35px;
+	}
+}
 
 /*Enables user to read more on click*/
-.readMorePar{
-  display: none;
+.readMorePar {
+	display: none;
 }
 
-.showStyleReadMore{
-  display:block;
-  width:100%;
-  padding:5%;
-  background-color:white;
-  font-size:18px;
-  text-align: left;
-  color: #00256F;
+.showStyleReadMore {
+	display: block;
+	width: 100%;
+	padding: 5%;
+	background-color: white;
+	font-size: 18px;
+	text-align: left;
+	color: #00256f;
 }
 
 /*Styles the Profile row holding image and intro, centers and spaces around*/
-.ProfileDiv-row{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:space-around;
-  align-items:center;
-  margin:2%;
-
+.ProfileDiv-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 2%;
 }
-
 
 /*sets the width of the Profile pics*/
-#profilePics{
-  width:40%;
+#profilePics {
+	width: 40%;
 }
 
-#marianSnow{
-  width:80%;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  box-shadow: 0 30px 30px 0 rgba(0,0,0,0.01),0 5px 15px 0 rgba(0,0,0,0.4);
+#marianSnow {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.01), 0 5px 15px 0 rgba(0, 0, 0, 0.4);
 }
-
 
 /*styles the intro box, gives it padding and makes it 45%*/
-#profileIntro{
-  width:55%;
-  padding:5%;
-  background-color:white;
-  color: #00256F;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-  rgba(17, 17, 26, 0.1) 0px 16px 56px, hotpink 10px 10px 5px;
+#profileIntro {
+	width: 55%;
+	padding: 5%;
+	background-color: white;
+	color: #00256f;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+		rgba(17, 17, 26, 0.1) 0px 16px 56px, hotpink 10px 10px 5px;
 }
 
 @media only screen and (max-width: 1024px) {
-  .ProfileDiv-row{
-    display:flex;
-    flex-direction:column-reverse;
-  }
+	.ProfileDiv-row {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 
-  #profilePics{
-    width:70%;
-  }
+	#profilePics {
+		width: 70%;
+	}
 
-  #profileIntro{
-    width:80%;
-    padding:5%;
-    margin:5%;
-    background-color:white;
-    color: #00256F;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-    rgba(17, 17, 26, 0.1) 0px 16px 56px, hotpink 10px 10px 5px;
-  }
-
+	#profileIntro {
+		width: 80%;
+		padding: 5%;
+		margin: 5%;
+		background-color: white;
+		color: #00256f;
+		box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+			rgba(17, 17, 26, 0.1) 0px 16px 56px, hotpink 10px 10px 5px;
+	}
 }
 /*styles the "Hi I'm Marian" heading*/
-#hi_im_marian{
-  color:#00256F;
-  font-size:30px;
-  text-align: left;
+#hi_im_marian {
+	color: #00256f;
+	font-size: 30px;
+	text-align: left;
 }
-
 
 /*fonts and images adjustment media query*/
 @media only screen and (max-width: 600px) {
-  #hi_im_marian{
-    font-size:28px;
-  }
-  .blockquote{
-    font-size:15px;
-    text-align: left;
-  }
+	#hi_im_marian {
+		font-size: 28px;
+	}
+	.blockquote {
+		font-size: 15px;
+		text-align: left;
+	}
 
-  .showStyleReadMore{
-    font-size:16px;
-  }
+	.showStyleReadMore {
+		font-size: 16px;
+	}
 }
 
 /*does hot pink double underline under Marian Abuhazi*/
-.coolUnder{
-  -webkit-text-decoration: hotpink double underline;
-  text-decoration: hotpink double underline;
-  font-family: 'Special Elite', cursive;
+.coolUnder {
+	-webkit-text-decoration: hotpink double underline;
+	text-decoration: hotpink double underline;
+	font-family: "Special Elite", cursive;
 }
 
 /*makes disclaimer blue and expands it to fix box*/
-#disclaimer{
-  color:grey;
-  text-align: left;
-  font-size:16px;
+#disclaimer {
+	color: grey;
+	text-align: left;
+	font-size: 16px;
 }
 
-.blockquote{
-  display:block;
-  margin-left: 20%;
-  margin-right:20%;
-  margin-top:2%;
-  margin-bottom:2%;
-  color:#49618a;
-  font-family: 'Special Elite', cursive;
-  text-align: justify;
+.blockquote {
+	display: block;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #49618a;
+	font-family: "Special Elite", cursive;
+	text-align: justify;
 }
 
-#sign-off{
-  font-size: 23px;
-  font-family: 'Special Elite', cursive;
+#sign-off {
+	font-size: 23px;
+	font-family: "Special Elite", cursive;
 }
 
-
-#readMore{
-  display:block;
+#readMore {
+	display: block;
 }
 
-.readMore{
-  display:block;
-  text-align:center;
-  padding:2%;
-  font-size:15px;
-  margin-left:auto;
-  margin-right:auto;
-  box-shadow: 0 30px 30px 0 rgba(0,0,0,0.01),
-  0 5px 15px 0 rgba(0,0,0,0.4);
-  background-color: #ffffff;
-  border-radius: 0.4rem;
-  border: 0 solid #FFDE59;
-  transition: border 400ms ease-in-out, padding 400ms ease-in-out;
-
+.readMore {
+	display: block;
+	text-align: center;
+	padding: 2%;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.01), 0 5px 15px 0 rgba(0, 0, 0, 0.4);
+	background-color: #ffffff;
+	border-radius: 0.4rem;
+	border: 0 solid #ffde59;
+	transition: border 400ms ease-in-out, padding 400ms ease-in-out;
 }
 
 .readMore:hover {
-  padding: 0.6rem;
-  border: 0.4rem solid #FFDE59;
+	padding: 0.6rem;
+	border: 0.4rem solid #ffde59;
 }
 
 .arrow-animation {
-  border: solid #FFDE59;
-  border-width: 0 7px 7px 0;
-  display: none;
-  float: right;
-  padding: 20px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  animation: change-color 2s infinite;
-
+	border: solid #ffde59;
+	border-width: 0 7px 7px 0;
+	display: none;
+	float: right;
+	padding: 20px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	animation: change-color 2s infinite;
 }
 
 @keyframes change-color {
-  0%   {border: solid #00256F; border-width: 0 7px 7px 0; padding: 20px; }
-  25%  {border: solid hotpink; border-width: 0 7px 7px 0; padding: 20px;}
-  50%  {border: solid #FFDE59; border-width: 0 9px 9px 0; padding: 22px;}
-  100%  {border: solid hotpink; border-width: 0 7px 7px 0; padding: 20px;}
+	0% {
+		border: solid #00256f;
+		border-width: 0 7px 7px 0;
+		padding: 20px;
+	}
+	25% {
+		border: solid hotpink;
+		border-width: 0 7px 7px 0;
+		padding: 20px;
+	}
+	50% {
+		border: solid #ffde59;
+		border-width: 0 9px 9px 0;
+		padding: 22px;
+	}
+	100% {
+		border: solid hotpink;
+		border-width: 0 7px 7px 0;
+		padding: 20px;
+	}
 }
-
 
 /*Sets the padding of all nav-linked sections to 5%*/
-section{
-  padding:3%;
+section {
+	padding: 3%;
 }
 
-h1{
-  margin:2%;
+h1 {
+	margin: 2%;
 }
 
-
-.Work-row{
-  display:flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  align-items:flex-start;
-  padding-top:2%;
-  padding-bottom:2%;
-  padding-left:3%;
-  padding-right:3%;
+.Work-row {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
-.ZonaGrillDiv-row, .mountSinai-div, .teachingDiv-row, .learningDiv-row, .skillDiv-row, .blogDiv-row, .Education-row, .projectsDiv-row{
-  display:flex;
-  flex-direction:column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top:2%;
-  padding-bottom:2%;
-  padding-left:5%;
-  padding-right:5%;
-  background-color:white;
-  margin:1%;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-  rgba(17, 17, 26, 0.1) 0px 16px 56px, #FFDE59 10px 10px 5px;
+.ZonaGrillDiv-row,
+.mountSinai-div,
+.teachingDiv-row,
+.learningDiv-row,
+.skillDiv-row,
+.blogDiv-row,
+.Education-row,
+.projectsDiv-row {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+	margin: 1%;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+		rgba(17, 17, 26, 0.1) 0px 16px 56px, #ffde59 10px 10px 5px;
 }
 
-.Experiences-row{
-  display:flex;
-  flex-direction:column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top:2%;
-  padding-bottom:2%;
-  padding-left:5%;
-  padding-right:5%;
-  background-color:white;
-  margin:1%;
+.Experiences-row {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+	margin: 1%;
 }
-.projectsDiv-row{
-  display:flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top:2%;
-  padding-bottom:2%;
-  padding-left:5%;
-  padding-right:5%;
-  background-color:white;
-  margin:1%;
+.projectsDiv-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+	margin: 1%;
 }
 
 @media only screen and (max-width: 768px) {
-  .projectsDiv-row{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
+	.projectsDiv-row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
-.ZonaGrillDiv-col{
-  width:100%;
-
+.ZonaGrillDiv-col {
+	width: 100%;
 }
 
-.roleBtn{
-  display:block;
-  text-align:center;
-  padding:2%;
-  box-shadow: 0 30px 30px 0 rgba(0,0,0,0.01),
-  0 5px 15px 0 rgba(0,0,0,0.4);
-  background-color: #ffffff;
-  border-radius: 0.4rem;
-  border: 0 solid hotpink;
-  transition: border 400ms ease-in-out, padding 400ms ease-in-out;
-  float:left;
-  margin-bottom:5%;
-  margin-top:1%;
+.roleBtn {
+	display: block;
+	text-align: center;
+	padding: 2%;
+	box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.01), 0 5px 15px 0 rgba(0, 0, 0, 0.4);
+	background-color: #ffffff;
+	border-radius: 0.4rem;
+	border: 0 solid hotpink;
+	transition: border 400ms ease-in-out, padding 400ms ease-in-out;
+	float: left;
+	margin-bottom: 5%;
+	margin-top: 1%;
 }
 
 .roleBtn:hover {
-  padding: 0.6rem;
-  border: 0.4rem solid hotpink;
+	padding: 0.6rem;
+	border: 0.4rem solid hotpink;
 }
 
-.teachingDiv-col{
-  padding-top:2%;
+.teachingDiv-col {
+	padding-top: 2%;
 }
 
-.image-and-name{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content: center;
+.image-and-name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 30%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 28%;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-container {
-  padding: 10px 10px;
+	padding: 10px 10px;
 }
 @media only screen and (max-width: 768px) {
-  .card {
-    width: 40%;
-  }
+	.card {
+		width: 40%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  .card {
-    width: 50%;
-  }
+	.card {
+		width: 50%;
+	}
 }
 @media only screen and (max-width: 425px) {
-  .card {
-    width: 60%;
-  }
+	.card {
+		width: 60%;
+	}
 }
